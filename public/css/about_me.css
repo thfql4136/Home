@@ -1,0 +1,46 @@
+@import 'base.css';
+
+.port_wrap {width:100%; height:100%;}
+.p_left {width:25%; height:100%; overflow: hidden; position:fixed;top:0%; left:0;}
+.p_left > img { width:auto; height:auto; min-width:100%; min-height: 100%; }
+.black {background-color: #000;  width:100%; height:100%; position: fixed; top:0; left:0; opacity:0.5;  }
+.logo {width:10%; position: fixed; left:10%; top:5%; z-index:9999; color:#e5e5e5;}
+.logo > img {max-width:50%;}
+.top { position: relative;  width:100%; height:100%;}
+.menus { position: fixed; top:30%; left:0%;z-index:99999; text-align: center; width:25%; height:100%;}
+.menu > li:nth-child(5) {font-size: 4em;}
+.menu > li {font-size: 1.5em; }
+.menu > li > a {color:#e5e5e5;}
+.line > div{border-left:1px solid #999; width:15px; height:30px;  margin:10px auto; opacity:0.6;}
+.p_right {background-color:#f4f6e6; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow:hidden;}
+.p_right .box {width:100%; height:50%; border-bottom:1px solid #d5cdca;}
+
+.comma {width:50%; height:50%;}
+.comma > img {max-width: 50%; position: absolute; top:1%; left:3%;}
+.text {background-color: #fff; width:80%; height:25%; position: absolute; top:15%; right:12%; z-index: 999; }
+.text > ul {overflow: hidden; width:80%; height:60%;}
+.text > ul > li{font-size: 2.7em;  padding:10% 0 5% 10%;}
+.text .small {font-size: 1.75rem; color:#999;}
+.comma2 {width:50%; height:50%;}
+.comma2 > img {max-width: 50%; position: absolute; top:40%; right:3%;}
+.green-box {width:35%; height:40%; line-height:60%; border:10px solid #01abab; position: absolute; top:8%; right:5%;}
+.girl {width:40%; height:40%; animation-name: girl_slide; }
+.girl > img {max-width:48%; max-height:48%; position: absolute; top:4%; right:5%; z-index: 9999;}
+.green-border {width:30%; height:10%;border-bottom:1px solid #a3b082; position: absolute; top:50%; left:8%;}
+.green-border2 {width:30%; height:10%; border-bottom:1px solid #a3b082;position: absolute; top:50%; right:8%;}
+.solbi {width:30%; margin:0 auto; }
+.solbi >p {font-size: 3.5em; color:#a3b082; font-weight: 400; position: absolute; top:56%; right:41%;}
+.intro-text {width:100%; height:50%; position: absolute; top:70%; left:12%; }
+.intro-text > ul {width:30%; height:100%; float:left;}
+.intro-text > ul >.big {font-size: 1.5em; color:#a3b082;}
+.intro-text > ul >li {margin-bottom:4%; color:#999;}
+.bold {font-weight: 700;}
+
+@keyframes girl_slide {
+    0%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    }
+}

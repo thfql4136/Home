@@ -1,0 +1,93 @@
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOX1jjWv0vxfNvisIgu1JmNvQCoVVKea0",
+    authDomain: "thfql4136-portfolio.firebaseapp.com",
+    databaseURL: "https://thfql4136-portfolio.firebaseio.com",
+    projectId: "thfql4136-portfolio",
+    storageBucket: "thfql4136-portfolio.appspot.com",
+    messagingSenderId: "89551442823"
+  };
+  firebase.initializeApp(config);
+
+    
+
+  var auth = firebase.auth();
+  var db = firebase.database();
+  var googleAuth = new firebase.auth.GoogleAuthProvider();
+  var ref;
+  var user;
+  var key='';
+
+  $(".btn1 .login").click(function(){
+      auth.signInWithRedirect(googleAuth);
+  });
+
+  auth.onAuthStateChanged(function(result){
+    if(result) {
+        user = result;
+        init();
+    }
+    else {
+        $(".login").show();
+        $(".logout").hide();
+        $(".lists").empty();
+    }
+  });
+
+  $(".btn2 .logout").click(function(){
+     auth.signOut();
+  });
+
+  function init(){
+      $(".login").hide();
+      $(".lists").empty();
+      $(".logout").show();
+      ref = db.ref("root/memos/");
+      ref.on("child_added",onAdd );
+      ref.on("child_removed",onRev );
+  }
+
+  function onAdd(data){
+      var id = data.key;
+      var val = data.val();
+      var a = new Date();
+      var months = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
+      var year = a.getFullYear();
+      var month = months[a.getMonth()];
+      var date = a.getDate();
+      var hour = a.getHours();
+      var min = a.getMinutes();
+      var sec = a.getSeconds();
+      var str = year+"년 "+month+" "+date+"일 "+(hour)+"시 "+(min)+"분 "+(sec)+"초";
+      var html = '<li class="kr" id="'+id+'">';
+      html += '<h4>'+val.content+'</h4>';
+      html += '<h5>'+val.email+'</h5>';
+      html += '<p>'+str+'</p>';
+      html +='</li>'
+      $(".lists").prepend(html);
+  }
+
+$("#btn_wr").click(function(){
+    var content = $("#content").val();
+    if(content == "") {
+        alert("내용을 입력해주세요~");
+        $("#content").focus();
+    }
+    else{
+        ref = db.ref("root/memos/");
+        ref.push({
+            content : content,
+            wdate: new Date().getTime(),
+            email: user.email
+        }).key;
+        $("#content").val("");
+    }
+});
+
+function onRev(data){
+    var id = data.key;
+    $("#"+id).remove();
+}
+
+
