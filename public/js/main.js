@@ -1,7 +1,4 @@
-$('.movie_bg').tubular({ 
-    videoId: 'qREKP9oijWI',
-    repeat:true
- });
+$('.movie_bg').tubular({ videoId: 'qREKP9oijWI'});
 
 $(window).on("mousewheel DOMMouseScroll", function(e) {
     e.preventDefault();

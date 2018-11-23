@@ -8,7 +8,7 @@ var html = '';
         success:function(data){
             if(data.code == 200){
                 for(var i = 0; i<data.result.length; i++){
-                  html +='<li class="le-tit">'+data.result[i].period+'</li>';
+                  html ='<li class="le-tit">'+data.result[i].period+'</li>';
                   html +='<li class="ri-tit">'+data.result[i].period1+'</li>';
                   html +='<li class="le-tit">'+data.result[i].Explanation+'</li>';
                   html +='<li class="ri-tit">'+data.result[i].Explanation1+'</li>';
@@ -20,9 +20,8 @@ var html = '';
                   html +='<li class="ri-tit">'+data.result[i].color1+'</li>';
                   html +='<li class="le-tit">'+data.result[i].skill+'</li>';
                   html +='<li class="ri-tit">'+data.result[i].skill1+'</li>';
-                  html +='<li class="lap2">'+data.result[i].photo+'</li>';
-                  
-                  $(".title > .content").append(html);
+                  html +='<li class="lap"><img src='+data.result[i].photo+'></li>';
+                  $(".cont").eq(i).append(html);
                 }
             }
             else {
