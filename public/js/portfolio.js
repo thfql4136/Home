@@ -4,9 +4,7 @@ var html = '';
         url:"../json/portfolio.json",
         type:"get",
         dataType:"json",
-        data:{
-            page:1
-        },
+        data:{ },
         success:function(data){
             if(data.code == 200){
                 for(var i = 0; i<data.result.length; i++){
