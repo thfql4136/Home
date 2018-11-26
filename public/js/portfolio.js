@@ -1,13 +1,3 @@
-/*  $('body').imagesLoaded()
-.done( function( instance ) {
-	$(".loader").hide(0);
-  console.log('all images successfully loaded');
-})
-.progress( function( instance, image ) {
-  var result = image.isLoaded ? 'loaded' : 'broken';
-  console.log( 'image is ' + result + ' for ' + image.img.src );
-});  */
-
 
 var config = {
     apiKey: "AIzaSyAOX1jjWv0vxfNvisIgu1JmNvQCoVVKea0",
@@ -33,6 +23,7 @@ function portAdd(data){
     var html = '';
     var id = data.key;
     var v = data.val();
+    $(".loader").show(0);
     html += '<div class="'+v.boxClass+'">';
     html += '<div class="box_left clear">';
     html += '<div class="wave1">';
@@ -76,23 +67,12 @@ function portAdd(data){
     html += '</div>';
     html += '</div>';
     $(".p_right").append(html);
-
-    /* for(var i = 0; i<data.result.length; i++){
-        html ='<li class="le-tit">'+data.result[i].period+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].period1+'</li>';
-        html +='<li class="le-tit">'+data.result[i].Explanation+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].Explanation1+'</li>';
-        html +='<li class="le-tit">'+data.result[i].Target+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].Target1+'</li>';
-        html +='<li class="le-tit">'+data.result[i].concept+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].concept1+'</li>';
-        html +='<li class="le-tit">'+data.result[i].color+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].color1+'</li>';
-        html +='<li class="le-tit">'+data.result[i].skill+'</li>';
-        html +='<li class="ri-tit">'+data.result[i].skill1+'</li>';
-        html +='<li class="lap lap'+[i+1]+'"><img src='+data.result[i].photo+'></li>';
-        $(".cont").eq(i).append(html);
-    } */
+    $('.p_right').imagesLoaded()
+.done( function( instance ) {
+	$(".loader").hide(0);
+  console.log('all images successfully loaded');
+})
+    
 };
 
 

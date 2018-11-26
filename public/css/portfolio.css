@@ -1,5 +1,7 @@
 @import "base.css";
 
+.loader {width:100%; height:100%; background-color: rgba(0,0,0,0.4); display: table; position: absolute; z-index:99999;}
+.loader > div {display: table-cell; vertical-align: middle; font-size: 5rem; color:#fff; text-align: center;}
 .port_wrap {width:100%; height:100%;}
 .p_left {width:25%; height:100%; overflow: hidden; position:fixed;top:0%; left:0;}
 .p_left > img { width:auto; height:auto; min-width:100%; min-height: 100%; }
