@@ -88,6 +88,8 @@ position: absolute; top:22%; left:19%;
 .text2{
     position: absolute; top:39%; left:41%; width:50%; height:50%;
 }
+.text2_2 {color:#6ca89f; position: absolute; top:36%; right:17%; width:60%; height:30%; }
+.text2_2 > p{font-size: 1.25em;}
 /* back, initially hidden pane */
 .back2 {
     transform: rotateY(180deg);
@@ -128,8 +130,10 @@ position: absolute; top:21%; left:39%;
 }
 .text3{
     position: absolute; top:23%; left:23%; text-align: center;width:50%; height:50%;
-    
 }
+.text3_2 {color:#6ca89f; position: absolute; top:40%; left:23%; width:60%; height:30%; }
+.text3_2 > p{font-size: 1.25em;}
+
 /* back, initially hidden pane */
 .back3 {
     transform: rotateY(180deg);
@@ -173,6 +177,8 @@ position: absolute; top:40%; left:18%;
 .text4 {
     position: absolute; top:38%; left:42%;width:50%; height:50%;
 }
+.text4_2 {color:#6ca89f; position: absolute; top:36%; right:18%; width:60%; height:30%; }
+.text4_2 > p{font-size: 1.25em;}
 /* back, initially hidden pane */
 .back4 {
     transform: rotateY(180deg);
@@ -261,6 +267,8 @@ position: absolute; bottom:25%; right:21%;
 .text6 {
     position: absolute; bottom:28%; right:25%; text-align: center;width:50%; height:50%;
 }
+.text6_2 {color:#6ca89f; position: absolute; top:30%; right:17%; width:60%; height:30%; }
+.text6_2 > p{font-size: 1.25em;}
 /* back, initially hidden pane */
 .back6 {
     transform: rotateY(180deg);

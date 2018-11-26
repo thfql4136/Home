@@ -1,3 +1,14 @@
+$('body').imagesLoaded()
+.done( function( instance ) {
+	$(".loader").hide(0);
+  console.log('all images successfully loaded');
+})
+.progress( function( instance, image ) {
+  var result = image.isLoaded ? 'loaded' : 'broken';
+  console.log( 'image is ' + result + ' for ' + image.img.src );
+});
+
+
 var html = '';
 
     $.ajax({
@@ -20,7 +31,7 @@ var html = '';
                   html +='<li class="ri-tit">'+data.result[i].color1+'</li>';
                   html +='<li class="le-tit">'+data.result[i].skill+'</li>';
                   html +='<li class="ri-tit">'+data.result[i].skill1+'</li>';
-                  html +='<li class="lap"><img src='+data.result[i].photo+'></li>';
+                  html +='<li class="lap lap'+[i+1]+'"><img src='+data.result[i].photo+'></li>';
                   $(".cont").eq(i).append(html);
                 }
             }

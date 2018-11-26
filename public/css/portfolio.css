@@ -22,34 +22,79 @@
 .tit {width:20%; border:1px solid #6fa2c9; margin:0 auto; position: absolute; top:5%; left:15%; line-height: 40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
 .wave2 { width:15%; position: absolute; top:2%; left:36%;}
 .wave2 > img {max-width:100%;}
-
-.content {width:50%; height:100%; position: relative; }
-.content > .le-tit {float:left; width:18%; color:#333; font-weight: 400;}
+.content {width:40%; height:50%; padding-bottom:1.5%; position: absolute; top:18%; left:8%;}
+.content > li {padding-bottom:5px;}
+.content > li:nth-child(3) {padding-bottom:20px;}
+.content > .le-tit {float:left; width:18%; color:#333; font-weight: 400; }
 .content > .ri-tit {float:right; width:80%;  color:#999;}
-.lap{ max-width:30%; max-height:30%; position: absolute; width:50%; height:50%;}
-.lap1 > img{ top:10%; right:150%; z-index: 111;} 
+.lap{ position: absolute; width:100%; height:100%;}
+.lap1 > img{ max-width:80%; max-height:60%;top:-17%; right:-100%; position: absolute; z-index: 999;}  
+.lap2 > img { max-width:80%;  top:-13%; left:-113%; position: absolute; z-index: 999;}
 .btn {width:30%; height:50%; }
 .le_btn {border:1px solid #6fa2c9; position: absolute; top:40%; left:10%; padding:1% 4%; }
 .ri_btn {border:1px solid #6fa2c9; position: absolute; top:40%; left:30%; padding:1% 4%;}
 .mokup {width:48%; }
 .n1 {border:10px solid #6fa2c9; width:30%; height:30%; position: absolute; top:5%; right:15%;}
 .n1 > .opa {width:100%; height:100%; opacity:0;}
-.mokup2 {width:50%; height:50%;}
-.n3{width:32%; height:31%; position: absolute; bottom:12.25%; left:7%; border-top:13px solid #d5cdca; border-bottom:13px solid #d5cdca;}
-.n3 > div{width:100%; height:100%;}
-.n2 {border:10px solid #accce0; width:30%; height:30%; position: absolute; top:12%; right:6%;} 
+.n2 {border:10px solid #accce0; width:30%; height:30%; position: absolute; top:13%; right:9%;} 
 .n2 > .opa {width:100%; height:100%; opacity:0; z-index:11;}
+
 .f1_left {width:50%; height:100%;}
 .btn2 {width:30%; height:50%; color:#222; font-weight: 400; font-size: 1.125em;}
 .le_btn2 {border:1px solid #d5cdca; position: absolute; bottom:5%; left:7%; padding:1.125% 4.5%;}
 .ri_btn2 {border:1px solid #d5cdca; position: absolute; bottom:5%; left:26.25%; padding:1.125% 4.5%;}
-.tit-box {width:50%; height:100%;}
+.tit-box {width:100%; height:100%;}
 .wave3 {width:16.5%; position: absolute; top:53%; right:38.5%;}
 .wave3 > img{max-width:100%;}
 .wave4 {width:17.5%; position: absolute; top:53%; right:0%;}
 .wave4 > img{max-width:100%;}
 .tit2 {width:20%; border:1px solid #d5cdca; margin:0 auto; position: absolute; top:55%; right:19%; line-height:40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
-.content1 {width:40%; height:100%; position: absolute; top:70%; right:5%;}
-.content1 > .le-tit {float:left; width:30%; color:#333; font-weight: 400;}
-.content1 > .ri-tit {float:right; width:70%;  color:#999;}
-.lap2 >img {max-width:80%; max-height:80%;top:-12%; right:140%; position: absolute; z-index: 999;}
+.content1 {width:40%; height:100%; position: absolute; top:70%; right:8%; padding-bottom:2%;}
+.content1 > .le-tit {float:left; width:18%; color:#333; font-weight: 400;}
+.content1 > .ri-tit {float:right; width:80%;  color:#999;}
+.content1 > li {padding-bottom:5px;}
+.content1 > li:nth-child(3) {padding-bottom:20px;}
+.mokup2 {width:50%; height:50%;}
+.n3{width:32%; height:31.5%; position: absolute; top:55.5%; left:6.8%; border-top:13px solid #d5cdca; border-bottom:13px solid #d5cdca;}
+.n3 > div{width:100%; height:100%;}
+
+.content2 {width:40%; height:100%; position: absolute; top:118%; left:8%; padding-bottom:2%;}
+.content2 > li {padding-bottom:5px;}
+.content2 > li:nth-child(3) {padding-bottom:20px;}
+.lap3 > img{ max-width:75%; max-height:60%;top:-9%; right:-100%; position: absolute; z-index: 999;}  
+.content2 > .le-tit {float:left; width:18%; color:#333; font-weight: 400;}
+.content2 > .ri-tit {float:right; width:80%;  color:#999;}
+.btn3 {width:30%; height:50%; }
+.le_btn3 {border:1px solid #6fa2c9; position: absolute; top:140%; left:10%; padding:1% 4%; }
+.ri_btn3 {border:1px solid #6fa2c9; position: absolute; top:140%; left:30%; padding:1% 4%;}
+.title1{ width:48%; }
+.title1 > .wave {  position: absolute; top:100%; left:1%; width:15%;}
+.title1 > .wave > img {max-width:100%;}
+.title1 > .tit {width:20%; border:1px solid #6fa2c9; margin:0 auto; position: absolute; top:105%; left:15%; line-height: 40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
+.title1 > .wave2 { width:15%; position: absolute; top:101%; left:36%;}
+.title1 > .wave2 > img {max-width:100%;}
+.mokup3 {width:48%; }
+.mokup3 > .n1 {border:10px solid #6fa2c9; width:30%; height:30%; position: absolute; top:105%; right:15%;}
+.mokup3 > .n1 > .opa {width:100%; height:100%; opacity:0;}
+.mokup3 > .n2 {border:10px solid #accce0; width:30%; height:30%; position: absolute; top:113%; right:9%;} 
+.mokup3 > .n2 > .opa {width:100%; height:100%; opacity:0; z-index:11;}
+
+.content3 {width:40%; height:100%; position: absolute; top:170%; right:8%; padding-bottom:2%;}
+.content3 > li {padding-bottom:5px;}
+.content3 > li:nth-child(3) {padding-bottom:20px;}
+.lap4 > img { max-width:79%;  top:-13%; left:-113%; position: absolute; z-index: 999;}
+.content3 > .le-tit {float:left; width:18%; color:#333; font-weight: 400;}
+.content3 > .ri-tit {float:right; width:80%;  color:#999;}
+.tit-box2 {width:100%; height:100%;}
+.btn4 {width:30%; height:50%; }
+.le_btn4 {border:1px solid #d5cdca; position: absolute; bottom:-95%; left:7%; padding:1.125% 4.5%;}
+.ri_btn4 {border:1px solid #d5cdca; position: absolute; bottom:-95%; left:26.25%; padding:1.125% 4.5%;}
+.f1_right2 {width:50%; height:100%;}
+.f1_right2 > .tit-box2 > .tit2 {width:20%; border:1px solid #d5cdca; margin:0 auto; position: absolute; top:155%; right:19%; line-height:40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
+.f1_right2 > .tit-box2 > .wave3 {width:16.5%; position: absolute; top:153%; right:38.5%;}
+.f1_right2 > .tit-box2 > .wave3 > img{max-width:100%;}
+.f1_right2 > .tit-box2 > .wave4 {width:17.5%; position: absolute; top:153%; right:0%;}
+.f1_right2 > .tit-box2 > .wave4 > img{max-width:100%;}
+.mokup4 {width:50%; height:50%;}
+.mokup4 > .n3_1{width:31.5%; height:30.9%; position: absolute; top:155.5%; left:6.8%; border-top:13px solid #d5cdca; border-bottom:13px solid #d5cdca;}
+ .mokup4 > .n3_1 > div{width:100%; height:100%;}

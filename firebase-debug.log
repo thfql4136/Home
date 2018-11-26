@@ -1,25 +1,38 @@
-[debug] [2018-11-23T05:49:12.370Z] ----------------------------------------------------------------------
-[debug] [2018-11-23T05:49:12.377Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-11-23T05:49:12.377Z] CLI Version:   5.1.1
-[debug] [2018-11-23T05:49:12.378Z] Platform:      win32
-[debug] [2018-11-23T05:49:12.378Z] Node Version:  v8.12.0
-[debug] [2018-11-23T05:49:12.379Z] Time:          Fri Nov 23 2018 14:49:12 GMT+0900 (대한민국 표준시)
-[debug] [2018-11-23T05:49:12.379Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T02:16:01.476Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T02:16:01.492Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-11-26T02:16:01.492Z] CLI Version:   5.1.1
+[debug] [2018-11-26T02:16:01.492Z] Platform:      win32
+[debug] [2018-11-26T02:16:01.492Z] Node Version:  v8.12.0
+[debug] [2018-11-26T02:16:01.492Z] Time:          Mon Nov 26 2018 11:16:01 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-26T02:16:01.492Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-11-23T05:49:12.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-11-23T05:49:12.412Z] > authorizing via signed-in user
-[debug] [2018-11-23T05:49:12.413Z] [iam] checking project thfql4136-portfolio for permissions ["firebase.projects.get"]
-[debug] [2018-11-23T05:49:12.419Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio:testIamPermissions  
+[debug] [2018-11-26T02:16:01.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T02:16:01.523Z] > authorizing via signed-in user
+[debug] [2018-11-26T02:16:01.523Z] [iam] checking project thfql4136-portfolio for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2018-11-26T02:16:01.523Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-26T02:16:01.523Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-26T02:16:01.944Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T02:16:01.960Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio:testIamPermissions  
 
-[debug] [2018-11-23T05:49:13.738Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-23T05:49:13.742Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio  
+[debug] [2018-11-26T02:16:03.199Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T02:16:03.202Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thfql4136-portfolio  
  
-[debug] [2018-11-23T05:49:14.959Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T02:16:04.081Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'D:\fbroot\portfolio'...
+[info] === Deploying to 'thfql4136-portfolio'...
 [info] 
-[debug] [2018-11-23T05:49:14.967Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/89551442823/clients/_:getWebAppConfig  
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-26T02:16:04.097Z] >>> HTTP REQUEST PUT https://thfql4136-portfolio.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
  
-[debug] [2018-11-23T05:49:15.706Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+[debug] [2018-11-26T02:16:05.122Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database thfql4136-portfolio is valid
+[debug] [2018-11-26T02:16:05.129Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/thfql4136-portfolio/versions  
+
