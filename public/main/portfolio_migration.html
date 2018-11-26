@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOX1jjWv0vxfNvisIgu1JmNvQCoVVKea0",
+    authDomain: "thfql4136-portfolio.firebaseapp.com",
+    databaseURL: "https://thfql4136-portfolio.firebaseio.com",
+    projectId: "thfql4136-portfolio",
+    storageBucket: "thfql4136-portfolio.appspot.com",
+    messagingSenderId: "89551442823"
+  };
+	firebase.initializeApp(config);
+	var db = firebase.database();
+	var ref;
+	$.ajax({
+		url:"../json/portfolio.json",
+		type:"post",
+		dataType:"json",
+		success: function(data) {
+			console.log(data);
+			ref = db.ref("root/portfolio");
+			ref.remove();
+			for(var i=0; i<data.result.length; i++) {
+				ref.push({
+					title: data.result[i].title,
+					expTit: data.result[i].Explanation,
+					expCont: data.result[i].Explanation1,
+					tarTit: data.result[i].Target,
+					tarCont: data.result[i].Target1,
+					colorTit: data.result[i].color,
+					colorCont: data.result[i].color1,
+					conceptTit: data.result[i].concept,
+					conceptCont: data.result[i].concept1,
+					periodTit: data.result[i].period,
+					periodCont: data.result[i].period1,
+					skillTit: data.result[i].skill,
+					skillCont: data.result[i].skill1,
+					img: data.result[i].photo,
+					className: data.result[i].className
+				}).key;
+			}
+		},
+		error: function(xhr) {
+			console.log(xhr);
+		}
+	});
+</script>
+</body>
+</html>

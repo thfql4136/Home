@@ -18,70 +18,65 @@ var config = {
     messagingSenderId: "89551442823"
   };
   firebase.initializeApp(config);
-
-  
   var db = firebase.database();
-  var ref = db.ref("root/port/");
+  var ref = db.ref("root/portfolio/");
   var user;
   var key = '';
 
-  var page = [];
-  page[0] = [];
-  page[0][0] = "제작 기간";
-    page[1][0] = "2018. 11. 26";
-    page[2][0] = "기획 의도";
-    page[3][0] = "1";
-    page[4][0] = "타겟층";
-    page[5][0] = "1";
-    page[6][0] = "컨셉";
-    page[7][0] = "1";
-    page[8][0] = "컬러 플랜";
-    page[9][0] = "1";
-    page[10][0] = "스킬";
-    page[11][0] = "1";
-    page[12][0] = "../img/laptop1.jpg";
-
   (function initPort(){
-      ref.db.ref("root/port");
+      ref = db.ref("root/portfolio");
       ref.on('child_added', portAdd);
-      ref.on('child_removed', shopRev);
+      //ref.on('child_removed', shopRev);
   })();
 
 function portAdd(data){
-   var html = '';
-   if(data.result) {
-       console.log(data.result);
-       if(i=0){
-           for(var i=0; i<data.result.length; i++){
-            html='<li class="le-tit">'+page[0][i]+'</li>';
-            html+='<li class="ri-tit">'+page[1][i]+'</li>';
-            html+='<li class="le-tit">'+page[2][i]+'</li>';
-            html+='<li class="ri-tit">'+page[3][i]+'</li>';
-            html+='<li class="le-tit">'+page[4][i]+'</li>';
-            html+='<li class="ri-tit">'+page[5][i]+'</li>';
-            html+='<li class="le-tit">'+page[6][i]+'</li>';
-            html+='<li class="ri-tit">'+page[7][i]+'</li>';
-            html+='<li class="le-tit">'+page[8][i]+'</li>';
-            html+='<li class="ri-tit">'+page[9][i]+'</li>';
-            html+='<li class="le-tit">'+page[10][i]+'</li>';
-            html+='<li class="ri-tit">'+page[11][i]+'</li>';
-            html+='<li class="lap lap1"><src="'+page[12][i]+'"></li>';
-           }
-       }
-       $(".content1").append(html);
-   }
-    
-    $(".cont").each(function(i){
-        var id = $(this).attr("id");
-        db.ref("root/port/"+id).once("value").then(function(snapshot){
-            $("#")
-        })
-    })
+    var html = '';
+    var id = data.key;
+    var v = data.val();
+    html += '<div class="box">';
+    html += '<div class="title clear">';
+    html += '<div class="wave">';
+    html += '<img src="../img/wave.png" alt="wave">';
+    html += '</div>';
+    html += '<div class="wave2">';
+    html += '<img src="../img/wave2.png" alt="wave">';
+    html += '</div>';
+    html += '<div class="tit">';
+    html += '<p class="kr">'+v.title+'</p>';
+    html += '</div>';
+    html += '<ul class="'+v.className+' cont kr clear">';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodCont+'</li>';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodTit+'</li>';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodTit+'</li>';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodTit+'</li>';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodTit+'</li>';
+    html +='<li class="le-tit">'+v.periodTit+'</li>';
+    html +='<li class="ri-tit">'+v.periodTit+'</li>';
+    html +='<li class="lap lap1"><src="'+v.periodTit+'"></li>';
+    html += '</ul>';
+    html += '<div class="btn">';
+    html += '<div class="le_btn">MAIN</div>';
+    html += '<div class="ri_btn">DETAIL</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '<div class="mokup">';
+    html += '<div class="n1">';
+    html += '<div class="opa">';
+    html += '</div>';
+    html += '</div>';
+    html += '<div class="n2">';
+    html += '<div class="opa">';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+    $(".p_right").append(html);
 
-   
-
-
-    
     /* for(var i = 0; i<data.result.length; i++){
         html ='<li class="le-tit">'+data.result[i].period+'</li>';
         html +='<li class="ri-tit">'+data.result[i].period1+'</li>';
