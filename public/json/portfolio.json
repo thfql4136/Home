@@ -2,6 +2,7 @@
 	"code": 200,
 	"page": 1,
 	"result": [{
+		"boxClass": "box",
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
 		"period1": "- 2018.10 ~ 2018.11",
@@ -19,10 +20,8 @@
 		"className":"content",
 		"square1":"../img/wave.png",
 		"square2":"../img/wave2.png"
-		
-		
-
 	}, {
+		"boxClass": "box1",
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
 		"period1": "- 2018.10 ~ 2018.11",
@@ -41,6 +40,7 @@
 		"square1":"../img/wave3.png",
 		"square2":"../img/wave4.png"
 	}, {
+		"boxClass": "box2",
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
 		"period1": "- 2018.10 ~ 2018.11",
@@ -59,6 +59,7 @@
 		"square1":"../img/wave.png",
 		"square2":"../img/wave2.png"
 	}, {
+		"boxClass": "box3",
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
 		"period1": "- 2018.10 ~ 2018.11",
