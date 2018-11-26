@@ -68,3 +68,32 @@
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 >>>>>>> 66784b604688cd8354c3f6365d8aee721fbc592f
+[debug] [2018-11-26T03:15:28.660Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T03:15:28.667Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-26T03:15:28.668Z] CLI Version:   5.1.1
+[debug] [2018-11-26T03:15:28.669Z] Platform:      win32
+[debug] [2018-11-26T03:15:28.669Z] Node Version:  v8.12.0
+[debug] [2018-11-26T03:15:28.670Z] Time:          Mon Nov 26 2018 12:15:28 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-26T03:15:28.670Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-26T03:15:28.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T03:15:28.711Z] > authorizing via signed-in user
+[debug] [2018-11-26T03:15:28.711Z] [iam] checking project thfql4136-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-11-26T03:15:28.716Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-26T03:15:28.717Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-26T03:15:29.236Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T03:15:29.252Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio:testIamPermissions  
+
+[debug] [2018-11-26T03:15:30.495Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T03:15:30.499Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio  
+ 
+[debug] [2018-11-26T03:15:31.652Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\fbroot\portfolio'...
+[info] 
+[debug] [2018-11-26T03:15:31.652Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/89551442823/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-26T03:15:32.448Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
