@@ -16,19 +16,24 @@
 .p_right {background-color:#e9f6f7; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow-Y:scroll;}
 .p_right .box {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
 
-.title{ width:48%; }
-.wave {  position: absolute; top:1%; left:1%; width:15%;}
-.wave > img {max-width:100%;}
-.tit {width:20%; border:1px solid #6fa2c9; margin:0 auto; position: absolute; top:5%; left:15%; line-height: 40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
-.wave2 { width:15%; position: absolute; top:2%; left:36%;}
+.box_left {width:48%;}
+.wave1 {position: absolute; top:1%; left:5%; width:15%;}
+.wave1 > img {max-width:100%;}
+.wave2 {position: absolute; top:2%; left:35%; width:15%;}
 .wave2 > img {max-width:100%;}
-.content {width:40%; height:50%; padding-bottom:1.5%; position: absolute; top:18%; left:8%;}
+.tit {width:20%; border:1px solid #6fa2c9; margin:0 auto; position: absolute; top:7%; left:15%; line-height: 40px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.25em;}
+.content {width:48%; height:50%; padding-bottom:1.5%; position: absolute; top:35%; left:8%;}
 .content > li {padding-bottom:5px;}
 .content > li:nth-child(3) {padding-bottom:20px;}
 .content > .le-tit {float:left; width:18%; color:#333; font-weight: 400; }
-.content > .ri-tit {float:right; width:80%;  color:#999;}
-.lap{ position: absolute; width:100%; height:100%;}
-.lap1 > img{ max-width:80%; max-height:60%;top:-17%; right:-100%; position: absolute; z-index: 999;}  
+.content > .lap{  width:100%; height:100%;  }
+.content > .lap > img{ width:100%; height:100%; position:absolute; top:0%; right:-50%; z-index: 999; }
+.btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
+.btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%;float:left; }
+.btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
+/* 
+
+
 .lap2 > img { max-width:80%;  top:-13%; left:-113%; position: absolute; z-index: 999;}
 .btn {width:30%; height:50%; }
 .le_btn {border:1px solid #6fa2c9; position: absolute; top:40%; left:10%; padding:1% 4%; }
@@ -98,3 +103,4 @@
 .mokup4 {width:50%; height:50%;}
 .mokup4 > .n3_1{width:31.5%; height:30.9%; position: absolute; top:155.5%; left:6.8%; border-top:13px solid #d5cdca; border-bottom:13px solid #d5cdca;}
  .mokup4 > .n3_1 > div{width:100%; height:100%;}
+ */

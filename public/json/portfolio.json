@@ -16,7 +16,12 @@
 		"skill": "스킬",
 		"skill1": "hello",
 		"photo": "../img/laptop1.jpg",
-		"className":"content"
+		"className":"content",
+		"square1":"../img/wave.png",
+		"square2":"../img/wave2.png"
+		
+		
+
 	}, {
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
@@ -32,7 +37,9 @@
 		"skill": "스킬",
 		"skill1": "hello",
 		"photo": "../img/laptop2.jpg",
-		"className":"content1"
+		"className":"content1",
+		"square1":"../img/wave3.png",
+		"square2":"../img/wave4.png"
 	}, {
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
@@ -48,7 +55,9 @@
 		"skill": "스킬",
 		"skill1": "hello",
 		"photo": "../img/laptop1.jpg",
-		"className":"content2"
+		"className":"content2",
+		"square1":"../img/wave.png",
+		"square2":"../img/wave2.png"
 	}, {
 		"title" :"세계 자동차 제주 박물관",
 		"period": "제작 기간",
@@ -64,6 +73,8 @@
 		"skill": "스킬",
 		"skill1": "hello",
 		"photo": "../img/laptop2.jpg",
-		"className":"content3"
+		"className":"content3",
+		"square1":"../img/wave3.png",
+		"square2":"../img/wave4.png"
 	}]
 }
