@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [debug] [2018-11-26T02:16:01.476Z] ----------------------------------------------------------------------
 [debug] [2018-11-26T02:16:01.492Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
 [debug] [2018-11-26T02:16:01.492Z] CLI Version:   5.1.1
@@ -36,3 +37,34 @@
 [info] +  database: rules syntax for database thfql4136-portfolio is valid
 [debug] [2018-11-26T02:16:05.129Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/thfql4136-portfolio/versions  
 
+=======
+[debug] [2018-11-25T10:30:14.365Z] ----------------------------------------------------------------------
+[debug] [2018-11-25T10:30:14.367Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sol bi\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-25T10:30:14.367Z] CLI Version:   5.1.1
+[debug] [2018-11-25T10:30:14.368Z] Platform:      win32
+[debug] [2018-11-25T10:30:14.368Z] Node Version:  v8.12.0
+[debug] [2018-11-25T10:30:14.368Z] Time:          Sun Nov 25 2018 19:30:14 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-25T10:30:14.368Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-25T10:30:14.383Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-25T10:30:14.383Z] > authorizing via signed-in user
+[debug] [2018-11-25T10:30:14.383Z] [iam] checking project thfql4136-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-11-25T10:30:14.385Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-25T10:30:14.385Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-25T10:30:14.749Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-25T10:30:14.757Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio:testIamPermissions  
+
+[debug] [2018-11-25T10:30:15.647Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-25T10:30:15.648Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio  
+ 
+[debug] [2018-11-25T10:30:16.530Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\sol bi\Desktop\alsdream\fbroot\portfolio'...
+[info] 
+[debug] [2018-11-25T10:30:16.534Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/89551442823/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-25T10:30:17.284Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+>>>>>>> 66784b604688cd8354c3f6365d8aee721fbc592f
