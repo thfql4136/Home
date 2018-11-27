@@ -52,11 +52,14 @@ position: absolute; top:13%; left:29%;
 }
 /* flip speed goes here */
 .flipper {
-    width:40%;height:40%;
+    border:1px solid #f00;
+    width:40%;
+    height:40%;
     transition: 0.6s;
    /* 하위요소에 3D 좌표값 지정 */
     transform-style: preserve-3d;
     position: relative;
+    z-index:9999999 !important;
 }
 /* hide back of pane during swap */
 .front1, .back1{

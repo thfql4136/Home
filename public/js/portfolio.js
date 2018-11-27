@@ -12,6 +12,7 @@ var config = {
   var ref = db.ref("root/portfolio/");
   var user;
   var key = '';
+  var tot = 2;
 
   (function initPort(){
       ref = db.ref("root/portfolio");
