@@ -16,22 +16,27 @@
   var db = firebase.database();
   var googleAuth = new firebase.auth.GoogleAuthProvider();
   var ref;
-  var user;
-  var key='';
+  var user = null;
+  var key = '';
+  init();
+
 
   $(".btn1 .login").click(function(){
-      auth.signInWithRedirect(googleAuth);
+      auth.signInWithPopup(googleAuth);
   });
+
+
 
   auth.onAuthStateChanged(function(result){
     if(result) {
+        $(".login").hide();
+        $(".logout").show();
         user = result;
-        init();
     }
     else {
         $(".login").show();
         $(".logout").hide();
-        $(".lists").empty();
+        user = null;
     }
   });
 
@@ -40,9 +45,6 @@
   });
 
   function init(){
-      $(".login").hide();
-      $(".lists").empty();
-      $(".logout").show();
       ref = db.ref("root/memos/");
       ref.on("child_added",onAdd );
       ref.on("child_removed",onRev );
@@ -68,20 +70,25 @@
       $(".lists").prepend(html);
   }
 
-$("#btn_wr").click(function(){
-    var content = $("#content").val();
-    if(content == "") {
-        alert("내용을 입력해주세요~");
-        $("#content").focus();
+$("#btn_wr").click(function(data){
+    if(user) {
+        var content = $("#content").val();
+        if(content == "" ) {
+            alert("내용을 입력해주세요~");
+            $("#content").focus();
+        }
+        else{
+            ref = db.ref("root/memos/");
+            ref.push({
+                content : content,
+                wdate: new Date().getTime(),
+                email: user.email
+            }).key;
+            $("#content").val("");
+        }
     }
-    else{
-        ref = db.ref("root/memos/");
-        ref.push({
-            content : content,
-            wdate: new Date().getTime(),
-            email: user.email
-        }).key;
-        $("#content").val("");
+    else {
+        alert("로그인을 해 주세요~");
     }
 });
 
