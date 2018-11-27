@@ -1,0 +1,29 @@
+[debug] [2018-11-27T08:17:09.291Z] ----------------------------------------------------------------------
+[debug] [2018-11-27T08:17:09.295Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-11-27T08:17:09.295Z] CLI Version:   5.1.1
+[debug] [2018-11-27T08:17:09.295Z] Platform:      darwin
+[debug] [2018-11-27T08:17:09.295Z] Node Version:  v8.9.4
+[debug] [2018-11-27T08:17:09.296Z] Time:          Tue Nov 27 2018 17:17:09 GMT+0900 (KST)
+[debug] [2018-11-27T08:17:09.296Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-27T08:17:09.322Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-27T08:17:09.323Z] > authorizing via signed-in user
+[debug] [2018-11-27T08:17:09.323Z] [iam] checking project thfql4136-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-11-27T08:17:09.326Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-27T08:17:09.327Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-27T08:17:09.633Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-27T08:17:09.650Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio:testIamPermissions  
+
+[debug] [2018-11-27T08:17:10.925Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-27T08:17:10.928Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thfql4136-portfolio  
+ 
+[debug] [2018-11-27T08:17:12.067Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/booldook/Documents/Folder_Temp/lsb-home'...
+[info] 
+[debug] [2018-11-27T08:17:12.070Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/89551442823/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-27T08:17:12.935Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
