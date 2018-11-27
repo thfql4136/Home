@@ -13,67 +13,20 @@
 .menu > li > a {color:#e5e5e5;}
 .line > div{border-left:1px solid #999; width:15px; height:30px;  margin:10px auto; opacity:0.6;}
 .p_right {background-color:#f5faef; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow:hidden;}
-.p_right .box {width:100%; height:50%; border-bottom:1px solid #d5cdca;}
+.p_right .box {width:100%; height:50%; border-bottom:1px solid #d5cdca; }
 .white {color:#fff;font-size: 1.75em; }
 
-
-/* entire container, keeps perspective*/
-.container1 {
-    width:30%; height:45%;
-    perspective: 1000px;
-position: absolute; top:13%; left:29%;
-}
-
-/* front pane, placed above back */
-.front1{
-  z-index:999;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
- background-image:url('../img/skill_img2.png');
- background-repeat: no-repeat;
-  background-size:100% 100%;
-}
-.text1 {text-align: center; width:50%; height:50%;
-    position: absolute; top:25%; left:25%; 
-}
+/********1*************/
+.front1{transform: rotateY(0deg); background-image:url('../img/skill_img2.png'); background-repeat: no-repeat; background-size:100%;}
+.text1 {text-align: center; width:30%; height:30%; position: absolute; top:25%; left:25%; }
 .text1_2 {color:#6ca89f; position: absolute; top:36%; right:19%; width:60%; height:30%; }
 .text1_2 > p{font-size: 1.25em;}
-/* back, initially hidden pane */
-.back1 {
-    transform: rotateY(180deg);
- background-image:url('../img/skill_line.png');
- background-repeat: no-repeat;
-  background-size:100% 100%;
- 
-}
-/* flip the pane when hovered */
-.container1:hover .flipper, .container1.hover .flipper {
-    transform: rotateY(180deg);
-}
-/* flip speed goes here */
-.flipper {
-    border:1px solid #f00;
-    width:40%;
-    height:40%;
-    transition: 0.6s;
-   /* 하위요소에 3D 좌표값 지정 */
-    transform-style: preserve-3d;
-    position: relative;
-    z-index:9999999 !important;
-}
-/* hide back of pane during swap */
-.front1, .back1{
-    width: 100%;
-    height: 100%;
-  position: absolute;
-  left:-2%; 
-  backface-visibility:hidden;
-} 
-
+.back1 {transform: rotateY(180deg); background-image:url('../img/skill_line.png'); background-repeat: no-repeat; background-size:100%;}
+.flipper1:hover {transform: rotateY(180deg);}
+.flipper1 {border:1px solid #f00; width:15%;  height:18%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.front1, .back1{width: 100%; height: 100%; position: absolute; left:-2%;  backface-visibility:hidden;} 
 
 /********2*************/
-
-/* entire container, keeps perspective*/
 .container2 {
     width:30%; height:45%;
     perspective: 1000px;
@@ -423,11 +376,10 @@ position: absolute; bottom:6.5%; right:0.5%;
 } 
 
 
-.skill_img {width:100%; height:100%;}
+.skill_img {width:70%; height:70%; opacity: 0.3;}
 .p_a {position: absolute; width:20%; height:30%;}
 .p_a > img {width:75%; height:75%;}
 .s_i1 {top:30%; left:5%;} 
-
 .s_i10 {bottom:34%; right: 22%;}
 .s_i12 {top:29%; left: 27.5%;}
 .s_i14 {bottom:0%; left:10%;}
@@ -445,7 +397,7 @@ position: absolute; bottom:6.5%; right:0.5%;
 .s_i21 {top:15%; right:-6%;}
 .s_i21 >img {width:65%; height:65%;}
 
-.p_b {position: absolute;z-index: 9999; width:5%; height:5%;}
+.p_b {position: absolute; width:5%; height:5%;}
 .s_t2 {top:100%; left: 30%; }
 
 .skill_line {width:100%; height:100%; display:none;}

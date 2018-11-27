@@ -27,6 +27,7 @@
     if(result) {
         user = result;
         init();
+        console.log(user);
     }
     else {
         $(".login").show();
@@ -68,9 +69,14 @@
       $(".lists").prepend(html);
   }
 
-$("#btn_wr").click(function(){
+$("#btn_wr").click(function(data){
     var content = $("#content").val();
-    if(content == "") {
+  /*   if(content ) {
+        alert("로그인을 해주세요~");
+        $(".login").removeClass(".w3-green").addClass(".w3-blue");
+    } */
+  
+    if(content == "" ) {
         alert("내용을 입력해주세요~");
         $("#content").focus();
     }
