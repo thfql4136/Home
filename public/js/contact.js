@@ -88,7 +88,7 @@ $("#btn_wr").click(function(data){
         }
     }
     else {
-        alert("로그인을 해 주세요~");
+        alert("로그인을 해주세요~");
     }
 });
 
