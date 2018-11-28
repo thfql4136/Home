@@ -17,8 +17,9 @@
 .white {color:#fff;font-size: 1.75em; }
 
 /********1*************/
-.flipper1:hover{transform: rotateY(180deg);}
-.flipper1 { position: relative; top:10%; left:16%; width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip {position: relative; top:10%; left:16%; width:15%; height:20%; z-index:9999999 !important;}
+.flipper {transform: rotateY(180deg);}
+.flipper1 { width:100%; height:100%; transition: 0.6s; transform-style: preserve-3d;}
 .front1, .back1{width: 100%; height: 100%;   backface-visibility:hidden;} 
 .front1{transform: rotateY(0deg); background-image:url('../img/skill_img2.png'); background-repeat: no-repeat; background-size:100%;}
 .back1 {transform: rotateY(180deg); background-image:url('../img/skill_line.png'); background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}
