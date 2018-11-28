@@ -1,6 +1,5 @@
 @import 'base.css';
 
-
 a {color:inherit;}
 a:hover {color:inherit;}
 
@@ -41,7 +40,7 @@ a:hover {color:inherit;}
 .btn2 {width:100%;}
 .btn_color1 {width:150px; height:40px; background-color: rgb(133, 194, 146); margin:0 auto; line-height:40px; cursor: pointer;}
 .btn_color1:hover {background-color: rgb(91, 196, 113);}
-.btn_color1 > a{color:#fff; font-weight: 400; font-size: 1.25rem;}
+.btn_color1 > a{ font-weight: 400; font-size: 1.25rem;}
 .btn_color2 {width:150px; height:40px; background-color: rgb(194, 133, 133); margin:0 auto; line-height:40px; cursor: pointer;}
 .btn_color2:hover { background-color: rgb(231, 97, 97);}
 .btn_color2 > a {color:#fff; font-weight: 400; font-size: 1.25rem;}
@@ -53,4 +52,4 @@ a:hover {color:inherit;}
 .w_btn {padding-top:7px;}
 .btn_color3 {width:70px; height:35px; background-color: rgb(224, 219, 143); margin:0 auto; line-height:35px; cursor: pointer;}
 .btn_color3:hover {background-color: rgb(243, 233, 87);}
-.btn_color3 > a {color:#fff; font-weight: 400; font-size: 1.25rem;}
+.btn_color3 > a { font-weight: 400; font-size: 1.25rem;}

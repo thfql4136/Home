@@ -15,10 +15,10 @@
 .p_right {background-color:#f5faef; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow:hidden;}
 .p_right .box {width:100%; height:50%; border-bottom:1px solid #d5cdca; }
 .white {color:#fff;font-size: 1.75em; }
+.flipper {transform: rotateY(180deg);}
 
 /********1*************/
 .flip {position: relative; top:10%; left:16%; width:15%; height:20%; z-index:9999999 !important;}
-.flipper {transform: rotateY(180deg);}
 .flipper1 { width:100%; height:100%; transition: 0.6s; transform-style: preserve-3d;}
 .front1, .back1{width: 100%; height: 100%;   backface-visibility:hidden;} 
 .front1{transform: rotateY(0deg); background-image:url('../img/skill_img2.png'); background-repeat: no-repeat; background-size:100%;}
@@ -28,8 +28,8 @@
 .text1_2 > p{font-size: 1.25em;}
 
 /********2*************/
-.flipper2:hover{transform: rotateY(180deg);}
-.flipper2 { position: relative; top:11%; left:16%; width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip2 {position: relative; top:11%; left:16%; width:15%; height:20%;  z-index:9999999 !important;}
+.flipper2 {width:100%; height:100%;  transition: 0.6s; transform-style: preserve-3d;}
 .front2, .back2{ width: 100%;height: 100%; backface-visibility:hidden;} 
 .front2{z-index:999; transform: rotateY(0deg); background-image:url('../img/skill_img2.png'); background-repeat: no-repeat; background-size:100%;}
 .back2 {transform: rotateY(180deg);background-image:url('../img/skill_line.png');background-repeat: no-repeat;background-size:100%; position: absolute; top:0%; left:0%;}
@@ -38,8 +38,8 @@
 .text2_2 > p{font-size: 1.25em;}
 
 /********3*************/
-.flipper3:hover{ transform: rotateY(180deg);}
-.flipper3 {position: relative; bottom:9%; left:38%; width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip3 {position: relative; bottom:9%; left:38%; width:15%; height:20%; z-index:9999999 !important;}
+.flipper3 {width:100%; height:100%; transition: 0.6s; transform-style: preserve-3d; }
 .front3, .back3{ width: 100%; height: 100%;   backface-visibility:hidden;} 
 .front3{ z-index:999;transform: rotateY(0deg);background-image:url('../img/skill_img2.png');background-repeat: no-repeat; background-size:100%;}
 .back3 { transform: rotateY(180deg);background-image:url('../img/skill_line.png');background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}
@@ -48,8 +48,8 @@
 .text3_2 > p{font-size: 1.25em;}
 
 /********4*************/
-.flipper4:hover{ transform: rotateY(180deg);}
-.flipper4 {position: relative; bottom:18%; left:27%; width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip4 {position: relative; bottom:18%; left:27%; width:15%; height:20%; z-index:9999999 !important;}
+.flipper4 {width:100%; height:100%; transition: 0.6s; transform-style: preserve-3d; }
 .front4, .back4{ width: 100%; height: 100%;   backface-visibility:hidden;} 
 .front4{z-index:999;transform: rotateY(0deg);background-image:url('../img/skill_img2.png'); background-repeat: no-repeat; background-size:100%;}
 .back4 {  transform: rotateY(180deg);background-image:url('../img/skill_line.png');background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}
@@ -58,8 +58,8 @@
 .text4_2 > p{font-size: 1.25em;}
 
 /********5*************/
-.flipper5:hover{transform: rotateY(180deg);}
-.flipper5 {position: relative; bottom:28%; left:38%; width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip5 {position: relative; bottom:28%; left:38%; width:15%; height:20%; z-index:9999999 !important;}
+.flipper5 {width:100%; height:100%;  transition: 0.6s; transform-style: preserve-3d; }
 .front5, .back5{  width: 100%;  height: 100%; backface-visibility:hidden;} 
 .front5{z-index:999;transform: rotateY(0deg);background-image:url('../img/skill_img2.png');background-repeat: no-repeat; background-size:100%;}
 .back5 {transform: rotateY(180deg);background-image:url('../img/skill_line.png');background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}
@@ -68,8 +68,8 @@
 .text5_2 > p{font-size: 1.5em;}
 
 /********6*************/
-.flipper6:hover{ transform: rotateY(180deg);}
-.flipper6 {position: relative; bottom:58%; left:50%;  width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip6{ position: relative; bottom:58%; left:50%;  width:15%; height:20%; z-index:9999999 !important;}
+.flipper6 {width:100%; height:100%;  transition: 0.6s; transform-style: preserve-3d; }
 .front6, .back6{ width: 100%; height: 100%; backface-visibility:hidden;} 
 .front6{ z-index:999; transform: rotateY(0deg);background-image:url('../img/skill_img2.png');background-repeat: no-repeat; background-size:100%;}
 .back6 {  transform: rotateY(180deg);background-image:url('../img/skill_line.png');background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}
@@ -78,8 +78,8 @@
 .text6_2 > p{font-size: 1.25em;}
 
 /********7*************/
-.flipper7:hover{  transform: rotateY(180deg);}
-.flipper7 {position: relative; bottom:88%; left:62%;  width:15%; height:20%; transition: 0.6s; transform-style: preserve-3d; z-index:9999999 !important;}
+.flip7{position: relative; bottom:88%; left:62%;  width:15%; height:20%; z-index:9999999 !important;}
+.flipper7 {width:100%; height:100%;  transition: 0.6s; transform-style: preserve-3d; }
 .front7, .back7{ width: 100%;  height: 100%;  backface-visibility:hidden;} 
 .front7{z-index:999; transform: rotateY(0deg); background-image:url('../img/skill_img2.png');background-repeat: no-repeat; background-size:100%;}
 .back7 {  transform: rotateY(180deg); background-image:url('../img/skill_line.png');background-repeat: no-repeat; background-size:100%; position: absolute; top:0%; left:0%;}

@@ -2,13 +2,18 @@
 
 // $('.movie_bg').tubular({ videoId: 'qREKP9oijWI'});
 
-$(window).on("mousewheel DOMMouseScroll", function(e) {
+var now = 0;
+$(window).scrollTop(0);
+
+$(window).on("mousewheel DOMMouseScroll", wheelFn).trigger("mousewheel DOMMouseScroll");
+ function wheelFn(e) {
     e.preventDefault();
     e.stopPropagation();
     var delta = e.originalEvent.wheelDelta;
     var scTop = $(window).scrollTop();
     var hei = [];
-    var now = 0;
+    
+    $(window).off("mousewheel DOMMouseScroll");
     $(".slide").each(function(i){
         hei[i] = $(this).offset().top;
     });
@@ -34,9 +39,9 @@ $(window).on("mousewheel DOMMouseScroll", function(e) {
         $(this).appendTo($(this)).slideDown();
     });
     $("html, body").stop().delay(10).animate({"scrollTop":hei[now]}, 300, function(){
-        
+        $(window).on("mousewheel DOMMouseScroll", wheelFn);
     });
-});
+};
 
 $(".menu li a").hover(function(){
     $(".overlay li").animate({"opacity":"0.5"});
