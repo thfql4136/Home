@@ -19,6 +19,7 @@
 .cont-img > img {max-width:45%; max-height:45%; position: absolute; top:10%; left:10%;}
 .text {width:30%; height:20%; background-color: #fff; position: absolute; top:60%; left:10%;}
 .text > li {font-size: 1.25em; color:#6b6a61; width:100%; text-align: center; padding:5% 4% 3% 5%; }
+.text > li > span > a{color:#6b6a61;}
 .line-black {position: absolute; top:54%; left:5%; opacity:0.5;}
 .line-black > img {max-width:70%; max-height:70%;}
 .line-black2 {position: absolute; bottom:16%; left:38%; opacity:0.5;}
@@ -34,9 +35,18 @@
 .btn_wid {width:70%; margin:30px auto;}
 .btn1 {width:100%; }
 .btn2 {width:100%;}
+.btn_color1 {width:150px; height:40px; background-color: rgb(133, 194, 146); margin:0 auto; line-height:40px; cursor: pointer;}
+.btn_color1:hover {background-color: rgb(91, 196, 113);}
+.btn_color1 > a{color:#fff; font-weight: 400; font-size: 1.25rem;}
+.btn_color2 {width:150px; height:40px; background-color: rgb(194, 133, 133); margin:0 auto; line-height:40px; cursor: pointer;}
+.btn_color2:hover { background-color: rgb(231, 97, 97);}
+.btn_color2 > a {color:#fff; font-weight: 400; font-size: 1.25rem;}
 .wrap{width:100%; height:480px; margin:0 auto; }
 .lists {width:50%; height:70%; overflow-y:scroll; background-color:#fff; margin:30px auto;}
 .lists > li {padding:10px; border-bottom:1px solid #ccc; }
 .writer {width:50%; margin:0 auto;}
 .w_text > textarea {width:70%; height:50px; }
-.w_btn {padding-top:10px;}
+.w_btn {padding-top:7px;}
+.btn_color3 {width:70px; height:35px; background-color: rgb(224, 219, 143); margin:0 auto; line-height:35px; cursor: pointer;}
+.btn_color3:hover {background-color: rgb(243, 233, 87);}
+.btn_color3 > a {color:#fff; font-weight: 400; font-size: 1.25rem;}

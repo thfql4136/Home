@@ -38,15 +38,22 @@ $(window).on("mousewheel DOMMouseScroll", function(e) {
     });
 });
 
-
-
-
 $(".menu li a").hover(function(){
     $(".overlay li").animate({"opacity":"0.5"});
 }, function(){
     $(".overlay li").animate({"opacity":"0.2"});
 });
 
-
+$(".overlay").mousemove(function (evt) {  //클래스배너에서 마우스가 움직이면 이벤트가 발생하겠습니다.
+    var delta = 50;
+    var cX = evt.clientX;
+    var cY = evt.clientY;
+    var iX = $(this).find(".slide").width() / 2;
+    var iY = $(this).find(".slide").height() / 2;
+    var mX = (iX - cX)/delta;
+    var mY = (iY - cY)/delta;
+    $(this).find(".slide").css("transform", "translate("+mX+"px, "+mY+"px)");
+    
+});
 
 
