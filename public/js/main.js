@@ -3,16 +3,16 @@
 // $('.movie_bg').tubular({ videoId: 'qREKP9oijWI'});
 
 var now = 0;
-$(window).scrollTop(0);
+var hei = [];
 
-$(window).on("mousewheel DOMMouseScroll", wheelFn).trigger("mousewheel DOMMouseScroll");
+$(window).on("mousewheel DOMMouseScroll", wheelFn);
  function wheelFn(e) {
+    console.log(e);
     e.preventDefault();
     e.stopPropagation();
+    scTop = $(window).scrollTop();
     var delta = e.originalEvent.wheelDelta;
-    var scTop = $(window).scrollTop();
-    var hei = [];
-    
+
     $(window).off("mousewheel DOMMouseScroll");
     $(".slide").each(function(i){
         hei[i] = $(this).offset().top;
@@ -23,7 +23,7 @@ $(window).on("mousewheel DOMMouseScroll", wheelFn).trigger("mousewheel DOMMouseS
             break;
         }
     }
-    console.log("S:"+now);
+    //console.log("S:"+now);
 
     if(delta > 0) {
         if(now > 0)  now--;
@@ -31,14 +31,14 @@ $(window).on("mousewheel DOMMouseScroll", wheelFn).trigger("mousewheel DOMMouseS
     else {
         if(now < hei.length-1)  now++;
     }
-    console.log("L:"+now);
+    //console.log("L:"+now);
     $(".sc-menu").css({"font-size":"1.5em"});
     $(".sc-menu").eq(now).css({"font-size":"6em"});
     
     $(".sc-menu").eq(now).slideUp(function(){
         $(this).appendTo($(this)).slideDown();
     });
-    $("html, body").stop().delay(10).animate({"scrollTop":hei[now]}, 300, function(){
+    $("html, body").stop().delay(100).animate({"scrollTop":hei[now]}, 300, function(){
         $(window).on("mousewheel DOMMouseScroll", wheelFn);
     });
 };
@@ -61,4 +61,4 @@ $(".overlay").mousemove(function (evt) {  //클래스배너에서 마우스가 �
     
 });
 
-
+$("html, body").stop().animate({"scrollTop":0});
