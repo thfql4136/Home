@@ -50,6 +50,3 @@ a:hover {color:inherit;}
 .writer {width:50%; margin:0 auto;}
 .w_text > textarea {width:70%; height:50px; }
 .w_btn {padding-top:7px;}
-.btn_color3 {width:70px; height:35px; background-color: rgb(224, 219, 143); margin:0 auto; line-height:35px; cursor: pointer;}
-.btn_color3:hover {background-color: rgb(243, 233, 87);}
-.btn_color3 > a { font-weight: 400; font-size: 1.25rem;}
