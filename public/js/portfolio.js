@@ -17,7 +17,7 @@ var config = {
   (function initPort(){
       ref = db.ref("root/portfolio");
       ref.on('child_added', portAdd);
-      //ref.on('child_removed', shopRev);
+
   })();
 
 function portAdd(data){
@@ -46,14 +46,18 @@ function portAdd(data){
     html +='<li class="le-tit">'+v.conceptTit+'</li>';
     html +='<li class="ri-tit">'+v.conceptCont+'</li>';
     html +='<li class="le-tit">'+v.colorTit+'</li>';
-    html +='<li class="ri-tit">'+v.colorCont+'</li>';
+    html +='<li class="ri-tit colorCont">';
+    html +='<div class="color_con1"></div>';
+    html +='<div class="color_con2"></div>';
+    html +='<div class="color_con3"></div>';
+    html +='</li>';
     html +='<li class="le-tit">'+v.skillTit+'</li>';
     html +='<li class="ri-tit">'+v.skillCont+'</li>';
     html +='<li class="lap"><img src="'+v.img+'"></li>';
     html += '</ul>';
     html += '<div class="btn clear">';
-    html += '<div class="le_btn">MAIN</div>';
-    html += '<div class="ri_btn">DETAIL</div>';
+    html += '<div class="le_btn"><a href="'+v.site+'">RESULT</a></div>';
+    // html += '<div class="ri_btn">Previous site</div>';
     html += '</div>';
     html += '</div>';
     html += '<div class="box_right">';

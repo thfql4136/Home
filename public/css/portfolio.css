@@ -14,8 +14,9 @@
 .menu > li {font-size: 1.5em; }
 .menu > li > a {color:#e5e5e5;}
 .line > div{border-left:1px solid #999; width:15px; height:30px;  margin:10px auto; opacity:0.6;}
-
-.p_right {background-color:#e9f6f7; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow-Y:scroll; overflow-x: hidden;}
+.colorCont > div {float:left; width:20px; height:20px;}
+.p_right {background-color:#e9f6f7; width:75%; height:100%; position: fixed; top:0; right:0; z-index:1; overflow-Y:scroll; overflow-x: hidden; }
+.colorCont {width:70%; height:10%;}
 
 .box {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
 .box_left {width:48%;}
@@ -30,7 +31,7 @@
 .content > .lap{  width:70%; height:70%;  }
 .content > .lap > img{ min-width:60%; width:70%; position:absolute; top:-20%; left:130%; z-index: 999; }
 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%;float:left; }
+.btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; margin:0 25%; }
 .btn > .le_btn:hover {background-color:#6fa2c9; color:#fff;  }
 .btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
 .btn > .ri_btn:hover {background-color:#6fa2c9; color:#fff;  }
@@ -39,6 +40,9 @@
 .box .sq_1 > .opa {width:100%; height:100%; }
 .box .sq_2 {border:10px solid #accce0; width:30%; height:60%; position: absolute; top:33%; right:3%;} 
 .box .sq_2 > .opa {width:100%; height:100%;  z-index:11;}
+.box .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#222;}
+.box .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:#a22c4d;}
+.box .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:#edeef2;}
 
 .box1 {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
 .box1 .wave1 {width:16%; position: absolute; top:2%; left:50%;}
@@ -59,6 +63,9 @@
 .box1 .box_right {width:48%; }
 .box1 .sq_1 {border-top:10px solid #d5cdca; width:32.5%; position: absolute; bottom:85%; right:57%;}
 .box1 .sq_2 {border-bottom:10px solid #d5cdca; width:32.5%; position: absolute; bottom:23%; right:57%;} 
+.box1 .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#a5c5bb;}
+.box1 .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:#222;}
+.box1 .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:#999;}
 
 .box2 {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
 .box2 .box_left {width:48%;}
@@ -82,6 +89,9 @@
 .box2 .sq_1 > .opa {width:100%; height:100%; }
 .box2 .sq_2 {border:10px solid #accce0; width:30%; height:60%; position: absolute; top:33%; right:3%;} 
 .box2 .sq_2 > .opa {width:100%; height:100%;  z-index:11;}
+.box2 .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#82a69e;}
+.box2 .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:#d6d7c8;}
+.box2 .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:#4a5e53;}
 
 .box3 {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
 .box3 .wave1 {width:16%; position: absolute; top:2%; left:50%;}
@@ -102,7 +112,57 @@
 .box3 .box_right {width:48%; }
 .box3 .sq_1 {border-top:10px solid #d5cdca; width:32.5%; position: absolute; bottom:85%; right:57%;}
 .box3 .sq_2 {border-bottom:10px solid #d5cdca; width:32.5%; position: absolute; bottom:23%; right:57%;} 
+.box3 .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#666;}
+.box3 .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:rgb(3, 112, 185);}
+.box3 .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:rgb(202, 216, 226);}
 
+.box4 {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
+.box4 .box_left {width:48%;}
+.box4 .wave1 {position: absolute; top:-1%; left:1%; width:15%;}
+.box4 .wave1 > img {max-width:100%;}
+.box4 .wave2 {position: absolute; top:0%; left:35%; width:15%;}
+.box4 .wave2 > img {max-width:100%;}
+.box4 .tit {width:20%; border:1px solid #6fa2c9; position: absolute; top:7%; left:15%; line-height: 30px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.125em;}
+.content4 {width:43%; height:50%; padding-bottom:1.5%; position: absolute; top:30%; left:8%;}
+.content4 > .le-tit {float:left; width:16%; height:10%; color:#555; font-weight: 700; font-size: 13px; margin-bottom:17px;}
+.content4 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
+.content4 > .lap{  width:100%; height:100%;  }
+.content4 > .lap > img{ max-width:120%; max-height:120%; position:absolute; top:-20%; right:-100%; z-index: 999;}
+.box4 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
+.box4 .btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%;float:left; }
+.box4 .btn > .le_btn:hover {background-color:#6fa2c9; color:#fff;  }
+.box4 .btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
+.box4 .btn > .ri_btn:hover {background-color:#6fa2c9; color:#fff;  }
+.box4 .box_right {width:48%; }
+.box4 .sq_1 {border:10px solid #6fa2c9; width:30%; height:60%; position: absolute; top:11%; right:10%;}
+.box4 .sq_1 > .opa {width:100%; height:100%; }
+.box4 .sq_2 {border:10px solid #accce0; width:30%; height:60%; position: absolute; top:33%; right:3%;} 
+.box4 .sq_2 > .opa {width:100%; height:100%;  z-index:11;}
+.box4 .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#ededed;}
+.box4 .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:#91a05d;}
+.box4 .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:#282828;}
 
+.box5 {width:100%; height:50%; border-bottom:1px solid #d5cdca; position: relative;}
+.box5 .wave1 {width:16%; position: absolute; top:2%; left:50%;}
+.box5 .wave1 > img{max-width:100%;}
+.box5 .wave2 {width:16%; position: absolute; top:2%; left:85%;}
+.box5 .wave2 > img{max-width:100%;}
+.box5 .tit {width:20%; border:1px solid #d5cdca; margin:0 auto; position: absolute; top:7%; left:66%; line-height: 30px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.125em;}
+.content5 {width:43%; height:50%; padding-bottom:1.5%; position: absolute; top:30%; left:58%;}
+.content5 > .le-tit {float:left; width:16%; height:10%; color:#555; font-weight: 700; font-size: 13px; margin-bottom:17px; }
+.content5 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
+.content5 > .lap{  width:70%; height:70%;  }
+.content5 > .lap > img{min-width:70%; width:75%; position:absolute; bottom:12%; right:135%; z-index: 999; }
+.box5 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
+.box5 .btn > .le_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%;float:left; }
+.box5 .btn > .le_btn:hover {background-color:#d5cdca; color:#fff; }
+.box5 .btn > .ri_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%; float:right; }
+.box5 .btn > .ri_btn:hover {background-color:#d5cdca; color:#fff;}
+.box5 .box_right {width:48%; }
+.box5 .sq_1 {border-top:10px solid #d5cdca; width:32.5%; position: absolute; bottom:85%; right:57%;}
+.box5 .sq_2 {border-bottom:10px solid #d5cdca; width:32.5%; position: absolute; bottom:23%; right:57%;} 
+.box5 .color_con1 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; background-color:#b9d9e2;}
+.box5 .color_con2 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px; margin:0 1%;background-color:#b9a88e;}
+.box5 .color_con3 {width:30px; height:30px;  border-radius: 50px 20px 50px 50px;background-color:#2d2d35;}
 
 
