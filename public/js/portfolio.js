@@ -59,7 +59,7 @@ function portAdd(data){
     html += '<div class="le_btn"><a href="'+v.site+'">RESULT</a></div>';
     // html += '<div class="ri_btn">Previous site</div>';
     html += '</div>';
-    html += '</div>';
+ 
     html += '<div class="box_right">';
     html += '<div class="sq_1">';
     html += '<div class="opa">';

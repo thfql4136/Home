@@ -27,13 +27,15 @@
 .box .tit {width:20%; border:1px solid #6fa2c9; position: absolute; top:7%; left:15%; line-height: 30px; text-align: center; padding:10px 0; font-weight: 400; font-size: 1.125em;}
 .content {width:43%; height:50%; padding-bottom:1.5%; position: absolute; top:30%; left:8%;}
 .content > .le-tit {float:left; width:16%; height:10%; color:#555; font-weight: 700; font-size: 13px; margin-bottom:17px; }
+.content > .le-tit > a{padding:1%;}
 .content > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
 .content > .lap{  width:70%; height:70%;  }
 .content > .lap > img{ min-width:60%; width:70%; position:absolute; top:-20%; left:130%; z-index: 999; }
-.btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; margin:0 25%; }
+.btn {width:13%;   position: absolute; top:80%; left:7%;  margin-left:12%; }
+.btn > .le_btn {border:1px solid #6fa2c9; width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;}
+.btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .btn > .le_btn:hover {background-color:#6fa2c9; color:#fff;  }
-.btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
+.btn > .ri_btn {border:1px solid #6fa2c9; padding:3% 3%; width:40%; float:right; }
 .btn > .ri_btn:hover {background-color:#6fa2c9; color:#fff;  }
 .box_right {width:48%; }
 .box .sq_1 {border:10px solid #6fa2c9; width:30%; height:60%; position: absolute; top:11%; right:10%;}
@@ -55,8 +57,9 @@
 .content1 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px;}
 .box1 .content1 > .lap{  width:70%; height:70%;  }
 .box1 .content1 > .lap > img{ min-width:70%; width:75%;  position:absolute; bottom:12%; right:135%; z-index: 999; }
-.box1 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.box1 .btn > .le_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%;float:left; }
+.box1 .btn {width:13%;  position: absolute; top:80%; left:7%;  margin-left:12%;}
+.box1 .btn > .le_btn {border:1px solid #d5cdca; width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;float:left; }
+.box1 .btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .box1 .btn > .le_btn:hover {background-color:#d5cdca;color:#fff; }
 .box1 .btn > .ri_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%; float:right; }
 .box1 .btn > .ri_btn:hover { background-color:#d5cdca; color:#fff;}
@@ -79,8 +82,9 @@
 .content2 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
 .content2 > .lap{  width:100%; height:100%;  }
 .content2 > .lap > img{ max-width:120%; max-height:120%; position:absolute; top:-20%; left:130%; z-index: 999;}
-.box2 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.box2 .btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%;float:left; }
+.box2 .btn {width:13%;  position: absolute; top:80%; left:7%; margin-left:12%;}
+.box2 .btn > .le_btn {border:1px solid #6fa2c9;  width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;float:left; }
+.box2 .btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .box2 .btn > .le_btn:hover {background-color:#6fa2c9; color:#fff;  }
 .box2 .btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
 .box2 .btn > .ri_btn:hover {background-color:#6fa2c9; color:#fff;  }
@@ -104,8 +108,9 @@
 .content3 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
 .content3 > .lap{  width:70%; height:70%;  }
 .content3 > .lap > img{min-width:70%; width:75%; position:absolute; bottom:12%; right:135%; z-index: 999; }
-.box3 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.box3 .btn > .le_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%;float:left; }
+.box3 .btn {width:13%;  position: absolute; top:80%; left:7%; margin-left:12%;}
+.box3 .btn > .le_btn {border:1px solid #d5cdca; width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;float:left; }
+.box3 .btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .box3 .btn > .le_btn:hover {background-color:#d5cdca; color:#fff; }
 .box3 .btn > .ri_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%; float:right; }
 .box3 .btn > .ri_btn:hover {background-color:#d5cdca; color:#fff;}
@@ -128,8 +133,9 @@
 .content4 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
 .content4 > .lap{  width:100%; height:100%;  }
 .content4 > .lap > img{ max-width:120%; max-height:120%; position:absolute; top:-20%; right:-100%; z-index: 999;}
-.box4 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.box4 .btn > .le_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%;float:left; }
+.box4 .btn {width:13%; position: absolute; top:80%; left:7%; margin-left:12%;}
+.box4 .btn > .le_btn {border:1px solid #6fa2c9;  width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;float:left; }
+.box4 .btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .box4 .btn > .le_btn:hover {background-color:#6fa2c9; color:#fff;  }
 .box4 .btn > .ri_btn {border:1px solid #6fa2c9; padding:2% 3%; width:40%; float:right; }
 .box4 .btn > .ri_btn:hover {background-color:#6fa2c9; color:#fff;  }
@@ -153,8 +159,9 @@
 .content5 > .ri-tit {float:left; width:70%; height:10%; margin-bottom:17px; }
 .content5 > .lap{  width:70%; height:70%;  }
 .content5 > .lap > img{min-width:70%; width:75%; position:absolute; bottom:12%; right:135%; z-index: 999; }
-.box5 .btn {width:40%; height:20%;  position: absolute; top:80%; left:7%; }
-.box5 .btn > .le_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%;float:left; }
+.box5 .btn {width:13%;  position: absolute; top:80%; left:7%; margin-left:12%;}
+.box5 .btn > .le_btn {border:1px solid #d5cdca; width:100%; text-align:center;box-sizing: border-box; padding-top:5%; padding-bottom:5%;float:left; }
+.box5 .btn > .le_btn > a{width:100%; padding:15% 25%; margin-top:50%;}
 .box5 .btn > .le_btn:hover {background-color:#d5cdca; color:#fff; }
 .box5 .btn > .ri_btn {border:1px solid #d5cdca; padding:2% 3%; width:40%; float:right; }
 .box5 .btn > .ri_btn:hover {background-color:#d5cdca; color:#fff;}
